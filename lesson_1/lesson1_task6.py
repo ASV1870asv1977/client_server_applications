@@ -13,13 +13,13 @@ string_list = [
 ]
 
 # Запись в файл
-with open('task_6.txt', 'w') as f:
+with open('../task_6.txt', 'w') as f:
     for string in string_list:
         f.write(f'{string}\n')
     print(f'Кодировка по умолчанию: {f}')
 
 # Открытие файла в формате Unicode
-with open('task_6.txt', 'rb') as f:
+with open('../task_6.txt', 'rb') as f:
     byte = f.read()
     print(f'Содержимое файла в формате "Unicode": {byte}')
     result = chardet.detect(byte)
